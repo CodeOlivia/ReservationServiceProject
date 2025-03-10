@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>파트너 회원 가입</title>
+</head>
+<body>
+<h1>파트너 회원가입</h1>
+<!--이메일(아이디), 이름, 비밀번호, 전화번호(점장은 파트너 회원 가입이 되어야 매장 등록 가능) -->
+<form method="post" action="/partner/register">
+<div>
+    <input type="email" name="partnerId" placeholder="이메일을 입력하세요." required/>
+</div>
+<div>
+    <input type="text" name="partnerName" placeholder="이름을 입력하세요." required/>
+</div>
+<div>
+    <input type="password" name="password" placeholder="비밀번호를 입력하세요." required/>
+</div>
+<div>
+    <input type="tel" name="phoneNumber" placeholder="번호를 입력하세요." required/>
+</div>
+<div>
+    <button type="submit">파트너 회원 가입</button>
+</div>
+</form>
+
+</body>
+</html>

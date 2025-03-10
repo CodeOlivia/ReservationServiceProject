@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>파트너 매장 등록</title>
+</head>
+<body>
+<h1>파트너 매장 등록</h1>
+<div>
+    <form method="post" action="/partner/store_register">
+        <div>
+            <input type="text" name="storeName" placeholder="매장명" required/>
+        </div>
+        <div>
+            <input type="text" name="storeAddress" placeholder="매장 주소" required/>
+        </div>
+        <div>
+            <input type="text" name="storeDescription" placeholder="매장 상세정보" required/>
+        </div>
+        <div>
+            <button type="submit">매장 등록</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

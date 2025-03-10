@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>파트너 로그인</title>
+</head>
+<body>
+<h1>파트너 로그인</h1>
+<form th:action="@{/partner/login}" method="post">
+    <div>
+        <input type="email" name="partnerId" placeholder="이메일을 입력하세요." required/>
+    </div>
+    <div>
+        <input type="password" name="password" placeholder="비밀번호를 입력하세요." required/>
+    </div>
+    <div>
+        <button type="submit">로그인</button>
+    </div>
+</form>
+<div th:if="${param.error}">
+    <p style="color: red;">로그인 실패: 아이디 또는 비밀번호를 확인해주세요.</p>
+</div>
+</body>
